@@ -1,0 +1,8 @@
+artifactDescription: "DIH Domain"
+artifactId: "domain"
+dateLibrary: "java8"
+groupId: "dk.rdpl.dih"
+modelPackage: "dk.rdpl.dih.domain.model"
+scmConnection: ""
+scmDeveloperConnection: ""
+scmUrl: ""
