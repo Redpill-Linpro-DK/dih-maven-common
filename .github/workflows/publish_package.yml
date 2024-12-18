@@ -23,8 +23,8 @@ jobs:
 
       - name: Publish package
         run: mvn clean package -f dih.domain/pom.xml
-      #
-      # - name: Publish package
-      #   run: mvn deploy -f dih.domain/pom.xml
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish package
+        run: mvn deploy -f dih.domain/pom.xml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

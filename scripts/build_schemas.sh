@@ -10,6 +10,14 @@ java -jar ../tools/openapi-generator-cli.jar generate -g java -i "$1" -o ../dih.
   rm -rf ../dih.domain/gradle* &&
   rm -rf ../dih.domain/api &&
   rm -rf ../dih.domain/src/test &&
-  rm -rf ../dih.domain/git_push.sh
-
-mvn clean compile -f ../dih.domain/pom.xml
+  rm -rf ../dih.domain/git_push.sh &&
+  head -n -1 ../dih.domain/pom.xml >../dih.domain/tmp.xml && mv ../dih.domain/tmp.xml ../dih.domain/pom.xml &&
+  echo "    <distributionManagement>
+          <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/Redpill-Linpro-DK/dih-maven-common</url>
+          </repository>
+    </distributionManagement>
+</project>" >>../dih.domain/pom.xml &&
+  mvn clean compile -f ../dih.domain/pom.xml
