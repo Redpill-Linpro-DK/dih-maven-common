@@ -1,4 +1,5 @@
 artifactDescription: "DIH Domain"
+annotationLibrary: "none"
 artifactId: "domain"
 dateLibrary: "java8"
 groupId: "dk.rdpl.dih"
