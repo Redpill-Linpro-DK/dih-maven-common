@@ -7,7 +7,7 @@ info:
 paths:
   /inventory/update:
     post:
-      summary: Update inventory
+      summary: update inventory
       description: |
         POST interface to update the inventory.
 
