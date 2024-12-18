@@ -218,7 +218,7 @@ CONFIG OPTIONS
 	    Serialization library, default depends on value of the option library
 	        jsonb - Use JSON-B as serialization library
 	        jackson - Use Jackson as serialization library
-	        gson - Use Gson as serialization library
+	        
 
 	snapshotVersion
 	    Uses a SNAPSHOT version.
