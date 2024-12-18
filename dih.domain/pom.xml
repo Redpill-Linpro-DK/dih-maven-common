@@ -356,4 +356,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spotless.version>2.43.0</spotless.version>
     </properties>
+    <distributionManagement>
+      <repository>
+        <id>github</id>
+        <name>GitHub Packages</name>
+        <url>https://maven.pkg.github.com/Redpill-Linpro-DK/dih-maven-common</url>
+      </repository>
+  </distributionManagement>
+
 </project>
